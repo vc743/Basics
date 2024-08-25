@@ -1,0 +1,111 @@
+*, ::before, ::after{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --orange-color:#EE5531;
+    --purple-color:#4621AB;
+    --light-purple:#866CDC;
+    --lighter-purple:#CFC4F1;
+    --gray-color:#D9D9D9;
+}
+
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.container{
+    width: 80%;
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title{
+    display: inline-block;
+    text-transform: uppercase;
+    background-color: var(--gray-color);
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+/* Typography */
+.text-bold{
+    font-weight: bold;
+}
+.text-italic{
+    font-style: italic;
+    margin-bottom: 15px;
+}
+.text-arial{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.text-new-roman{
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 15px;
+}
+.text-underline{
+    text-decoration: underline;
+}
+.text-line-through{
+    text-decoration: line-through;
+}
+
+/* Headings */
+.h1{
+    font-size: 2.5rem;
+}
+.h2{
+    font-size: 2rem;
+}
+.h3{
+    font-size: 1.5rem;
+}
+
+/* Colors */
+.text-color-orange{
+    color: var(--orange-color);
+    margin-bottom: 10px;
+}
+.square{
+    width: 80px;
+    height: 80px;
+    background-color: var(--orange-color);
+}
+.text-color-purple{
+    color: var(--purple-color);
+    margin: 10px 0;
+}
+.circle{
+    width: 80px;
+    height: 80px;
+    background-color: var(--purple-color);
+    border-radius: 50%;
+}
+
+/* Buttons */
+.btn{
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: none;
+    padding: 15px 70px;
+    font-size: 1rem;
+    background-color: var(--purple-color);
+    color: #FFFFFF;
+}
+.btn-hover{
+    background-color: var(--light-purple);
+}
+.btn-active{
+    background-color: var(--lighter-purple);
+    color: #000000;
+}
